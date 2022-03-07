@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.tjanu.dissonant.gui.Session">
+   <children>
+       <TitledPane animated="true" text="Music">
+           <content>
+               <HBox alignment="CENTER_LEFT">
+                   <fx:include fx:id="musicBot" source="botControls.fxml" />
+                   <ToggleButton fx:id="play" mnemonicParsing="false" text="Play" />
+                   <ToggleButton fx:id="loop" mnemonicParsing="false"  text="Loop" />
+                   <Region prefWidth="10" />
+                   <Label text="Playlist:" />
+                   <Region prefWidth="5" />
+                   <ComboBox fx:id="musicPlaylist" />
+                   <CheckBox fx:id="stopOnChange" text="Stop running playlist on change"/>
+               </HBox>
+           </content>
+       </TitledPane>
+       <TitledPane animated="true" text="Soundboard">
+           <content>
+               <VBox VBox.vgrow="ALWAYS" alignment="CENTER_LEFT">
+                   <HBox>
+                       <fx:include fx:id="soundboardBot" source="botControls.fxml" />
+                   </HBox>
+                   <FlowPane fx:id="soundboard" HBox.hgrow="ALWAYS" />
+               </VBox>
+           </content>
+       </TitledPane>
+       <Region VBox.vgrow="ALWAYS"/>
+   </children>
+</VBox>

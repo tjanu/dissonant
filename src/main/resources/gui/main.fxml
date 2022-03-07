@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.tjanu.dissonant.gui.MainWindow">
+    <fx:include fx:id="menu" source="menu.fxml" />
+    <fx:include fx:id="noSession" source="noSession.fxml" VBox.vgrow="ALWAYS" />
+    <fx:include fx:id="session" source="session.fxml" VBox.vgrow="ALWAYS" visible="false" />
+</VBox>

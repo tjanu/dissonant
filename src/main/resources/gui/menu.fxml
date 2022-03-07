@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<MenuBar xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+         fx:controller="com.github.tjanu.dissonant.gui.Menu">
+    <Menu text="_File">
+        <MenuItem text="_New" onAction="#create"/>
+        <MenuItem text="_Open" onAction="#open"/>
+        <MenuItem fx:id="saveEntry" text="_Save" onAction="#save"/>
+        <MenuItem fx:id="saveAsEntry" text="Save _As" onAction="#saveAs"/>
+        <SeparatorMenuItem/>
+        <MenuItem text="_Close" onAction="#close"/>
+    </Menu>
+    <Menu fx:id="manageMenu" text="_Manage">
+        <MenuItem fx:id="playlistsEntry" text="_Playlists..." onAction="#managePlaylists"/>
+        <MenuItem fx:id="soundsEntry" text="_Sounds..." onAction="#manageSounds"/>
+    </Menu>
+</MenuBar>
+

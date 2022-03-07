@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<HBox xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.tjanu.dissonant.gui.BotControls">
+   <TextField fx:id="token" promptText="Token" />
+    <ToggleButton fx:id="connect">
+        <graphic>
+            <ImageView fitHeight="14" fitWidth="14"><Image url="@../icons/discord-white.png"/></ImageView>
+        </graphic>
+    </ToggleButton>
+</HBox>

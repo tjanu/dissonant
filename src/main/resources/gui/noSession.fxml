@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.tjanu.dissonant.gui.NoSession">
+   <children>
+       <Label contentDisplay="CENTER" text="No session open yet. Maybe..." textAlignment="CENTER" />
+      <Hyperlink text="create a new session" onAction="#create"/>
+      <Hyperlink text="load an existing session" onAction="#load" />
+   </children>
+</VBox>
